@@ -6,103 +6,542 @@ endobj
 << /Type /Pages /Kids [3 0 R] /Count 1 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
 endobj
 4 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 5 0 obj
-<< /Length 2141 >>
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Length 7477 >>
 stream
+0.090 0.306 0.651 rg
+0 704 612 88 re f
+0.220 0.741 0.973 rg
+0 696 612 8 re f
 BT
-/F1 16 Tf
-72 755 Td
-(Eightfold Candidate Transformer - Technical Design) Tj
-/F1 11 Tf
-0 -24 Td
+1.000 1.000 1.000 rg
+/F2 18 Tf
+42 755 Td
+(Multi-Source Candidate Data Transformer) Tj
+ET
+BT
+0.859 0.918 0.996 rg
+/F1 9 Tf
+42 735 Td
+(One-page technical design for the Eightfold engineering intern assignment) Tj
+ET
+BT
+1.000 1.000 1.000 rg
+/F2 8 Tf
+470 755 Td
+(Deterministic) Tj
+ET
+BT
+1.000 1.000 1.000 rg
+/F2 8 Tf
+470 740 Td
+(Explainable) Tj
+ET
+BT
+1.000 1.000 1.000 rg
+/F2 8 Tf
+470 725 Td
+(Configurable) Tj
+ET
+BT
+0.090 0.306 0.651 rg
+/F2 11 Tf
+42 674 Td
+(Goal) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 8 Tf
+42 660 Td
+(Build a pipeline that turns messy candidate data from structured and unstructured sources into one trustworthy) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 8 Tf
+42 650 Td
+(canonical profile per candidate, then reshapes that profile through runtime config without changing) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 8 Tf
+42 640 Td
+(transformation code.) Tj
+ET
+BT
+0.090 0.306 0.651 rg
+/F2 11 Tf
+42 626 Td
 (Pipeline) Tj
-/F1 9 Tf
-0 -13 Td
-(Detect source type, extract fields, normalize formats, merge candidate evidence, score) Tj
-/F1 9 Tf
-0 -13 Td
-(confidence, project to the requested customer schema, then validate before output.) Tj
-/F1 11 Tf
-0 -21 Td
-(Canonical schema) Tj
-/F1 9 Tf
-0 -13 Td
-(candidate_id, full_name, emails, phones, location, links, headline, years_experience, skills) Tj
-/F1 9 Tf
-0 -13 Td
-(with confidence/sources, experience, education, provenance, and overall_confidence.) Tj
-/F1 11 Tf
-0 -21 Td
-(Normalized formats) Tj
-/F1 9 Tf
-0 -13 Td
-(Emails are lowercased, phones are E.164, countries are ISO-3166 alpha-2, dates are YYYY-MM, and) Tj
-/F1 9 Tf
-0 -13 Td
-(skills are canonical lowercase names using an alias map such as JS -> javascript.) Tj
-/F1 11 Tf
-0 -21 Td
-(Merge policy) Tj
-/F1 9 Tf
-0 -13 Td
-(Records match by email first, phone second, normalized name last. Scalar conflicts are resolved) Tj
-/F1 9 Tf
-0 -13 Td
-(by repeated evidence, average source confidence, then individual confidence. Lists are deduped.) Tj
-/F1 11 Tf
-0 -21 Td
-(Runtime config) Tj
-/F1 9 Tf
-0 -13 Td
-(The transformer always builds a full canonical record first. A separate projection layer selects) Tj
-/F1 9 Tf
-0 -13 Td
-(fields, renames paths, maps from canonical paths like emails[0] or skills[].name, applies) Tj
-/F1 9 Tf
-0 -13 Td
-(optional normalizers, toggles confidence/provenance, and handles missing values as null, omit,) Tj
-/F1 9 Tf
-0 -13 Td
-(or error.) Tj
-/F1 11 Tf
-0 -21 Td
-(Handled edge cases) Tj
-/F1 9 Tf
-0 -13 Td
-(Missing or malformed source fields do not crash the run; bad phones are dropped instead of) Tj
-/F1 9 Tf
-0 -13 Td
-(guessed; CSV and notes for the same person merge into one profile; every chosen value keeps) Tj
-/F1 9 Tf
-0 -13 Td
-(provenance.) Tj
-/F1 11 Tf
-0 -21 Td
-(Scoped out) Tj
-/F1 9 Tf
-0 -13 Td
-(ATS JSON, live GitHub/LinkedIn calls, and PDF/DOCX resume parsing are left as future extractors.) Tj
-/F1 9 Tf
-0 -13 Td
-(They can emit the same intermediate evidence objects without changing merge or projection logic.) Tj
+ET
+0.878 0.949 0.996 rg
+42 594 67 24 re f
+0.8 w
+0.576 0.773 0.992 RG
+42 594 67 24 re S
+BT
+0.059 0.090 0.165 rg
+/F2 7 Tf
+50 602 Td
+(Detect) Tj
+ET
+BT
+0.145 0.388 0.922 rg
+/F2 9 Tf
+112 602 Td
+(>) Tj
+ET
+0.859 0.918 0.996 rg
+117 594 67 24 re f
+0.8 w
+0.576 0.773 0.992 RG
+117 594 67 24 re S
+BT
+0.059 0.090 0.165 rg
+/F2 7 Tf
+125 602 Td
+(Extract) Tj
+ET
+BT
+0.145 0.388 0.922 rg
+/F2 9 Tf
+187 602 Td
+(>) Tj
+ET
+0.878 0.949 0.996 rg
+192 594 67 24 re f
+0.8 w
+0.576 0.773 0.992 RG
+192 594 67 24 re S
+BT
+0.059 0.090 0.165 rg
+/F2 7 Tf
+200 602 Td
+(Normalize) Tj
+ET
+BT
+0.145 0.388 0.922 rg
+/F2 9 Tf
+262 602 Td
+(>) Tj
+ET
+0.859 0.918 0.996 rg
+267 594 67 24 re f
+0.8 w
+0.576 0.773 0.992 RG
+267 594 67 24 re S
+BT
+0.059 0.090 0.165 rg
+/F2 7 Tf
+275 602 Td
+(Match + Merge) Tj
+ET
+BT
+0.145 0.388 0.922 rg
+/F2 9 Tf
+337 602 Td
+(>) Tj
+ET
+0.878 0.949 0.996 rg
+342 594 67 24 re f
+0.8 w
+0.576 0.773 0.992 RG
+342 594 67 24 re S
+BT
+0.059 0.090 0.165 rg
+/F2 7 Tf
+350 602 Td
+(Score) Tj
+ET
+BT
+0.145 0.388 0.922 rg
+/F2 9 Tf
+412 602 Td
+(>) Tj
+ET
+0.859 0.918 0.996 rg
+417 594 67 24 re f
+0.8 w
+0.576 0.773 0.992 RG
+417 594 67 24 re S
+BT
+0.059 0.090 0.165 rg
+/F2 7 Tf
+425 602 Td
+(Project) Tj
+ET
+BT
+0.145 0.388 0.922 rg
+/F2 9 Tf
+487 602 Td
+(>) Tj
+ET
+0.878 0.949 0.996 rg
+492 594 67 24 re f
+0.8 w
+0.576 0.773 0.992 RG
+492 594 67 24 re S
+BT
+0.059 0.090 0.165 rg
+/F2 7 Tf
+500 602 Td
+(Validate) Tj
+ET
+0.973 0.980 0.988 rg
+42 464 250 96 re f
+0.8 w
+0.796 0.835 0.882 RG
+42 464 250 96 re S
+0.145 0.388 0.922 rg
+42 542 250 18 re f
+BT
+1.000 1.000 1.000 rg
+/F2 8 Tf
+51 547 Td
+(CANONICAL SCHEMA) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+51 529 Td
+(candidate_id, full_name, emails, phones, location,) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+51 519 Td
+(links, headline, years_experience, skills with) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+51 509 Td
+(confidence and sources, experience, education,) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+51 499 Td
+(provenance, and overall_confidence. This internal) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+51 489 Td
+(record stays stable even when customer output shape) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+51 479 Td
+(changes.) Tj
+ET
+0.973 0.980 0.988 rg
+320 464 250 96 re f
+0.8 w
+0.796 0.835 0.882 RG
+320 464 250 96 re S
+0.031 0.569 0.698 rg
+320 542 250 18 re f
+BT
+1.000 1.000 1.000 rg
+/F2 8 Tf
+329 547 Td
+(NORMALIZATION CHOICES) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+329 529 Td
+(Emails are lowercased; phones are converted to E.164;) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+329 519 Td
+(countries become ISO-3166 alpha-2; dates become YYYY-) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+329 509 Td
+(MM; skills are canonicalized through a deterministic) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+329 499 Td
+(alias map such as JS to javascript and Postgres to) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+329 489 Td
+(postgresql.) Tj
+ET
+0.973 0.980 0.988 rg
+42 328 250 110 re f
+0.8 w
+0.796 0.835 0.882 RG
+42 328 250 110 re S
+0.114 0.306 0.847 rg
+42 420 250 18 re f
+BT
+1.000 1.000 1.000 rg
+/F2 8 Tf
+51 425 Td
+(MERGE + CONFIDENCE POLICY) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+51 407 Td
+(Candidate identity uses email first, phone second,) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+51 397 Td
+(normalized name last. Scalar conflicts are resolved by) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+51 387 Td
+(repeated evidence, then average source confidence, then) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+51 377 Td
+(source confidence. CSV starts at 0.90; parsed notes) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+51 367 Td
+(start at 0.68. Cross-source agreement increases overall) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+51 357 Td
+(confidence.) Tj
+ET
+0.973 0.980 0.988 rg
+320 328 250 110 re f
+0.8 w
+0.796 0.835 0.882 RG
+320 328 250 110 re S
+0.059 0.463 0.431 rg
+320 420 250 18 re f
+BT
+1.000 1.000 1.000 rg
+/F2 8 Tf
+329 425 Td
+(RUNTIME OUTPUT CONFIG) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+329 407 Td
+(Projection runs only after the canonical record is) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+329 397 Td
+(built and validated. Config fields can choose a subset,) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+329 387 Td
+(rename paths, read from canonical paths like emails[0]) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+329 377 Td
+(and skills[].name, apply per-field normalizers, toggle) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+329 367 Td
+(provenance/confidence, and set missing handling to) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+329 357 Td
+(null, omit, or error.) Tj
+ET
+1.000 1.000 1.000 rg
+42 174 528 126 re f
+0.8 w
+0.796 0.835 0.882 RG
+42 174 528 126 re S
+BT
+0.090 0.306 0.651 rg
+/F2 10 Tf
+58 280 Td
+(Edge Cases Handled) Tj
+ET
+BT
+0.145 0.388 0.922 rg
+/F2 7 Tf
+58 263 Td
+(-) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+68 263 Td
+(Missing source fields become null or are omitted based on config;) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+68 254 Td
+(the run does not crash.) Tj
+ET
+BT
+0.145 0.388 0.922 rg
+/F2 7 Tf
+58 243 Td
+(-) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+68 243 Td
+(Malformed phones are dropped instead of guessed, preserving trust) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+68 234 Td
+(over false precision.) Tj
+ET
+BT
+0.145 0.388 0.922 rg
+/F2 7 Tf
+58 223 Td
+(-) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+68 223 Td
+(Duplicate CSV and notes records merge into one candidate with field-) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+68 214 Td
+(level provenance.) Tj
+ET
+BT
+0.145 0.388 0.922 rg
+/F2 7 Tf
+58 203 Td
+(-) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+68 203 Td
+(Skill aliases like Node.js, JS, and Postgres map to canonical names.) Tj
+ET
+BT
+0.145 0.388 0.922 rg
+/F2 7 Tf
+58 192 Td
+(-) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+68 192 Td
+(Required custom-output fields can fail fast when on_missing is set) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+68 183 Td
+(to error.) Tj
+ET
+BT
+0.090 0.306 0.651 rg
+/F2 10 Tf
+345 280 Td
+(Deliberately Scoped Out) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+345 263 Td
+(ATS JSON, live GitHub or LinkedIn) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+345 254 Td
+(enrichment, and PDF/DOCX resume parsing) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+345 245 Td
+(are future extractors. They would emit) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+345 236 Td
+(the same evidence objects, so merge,) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+345 227 Td
+(confidence, projection, and validation) Tj
+ET
+BT
+0.067 0.094 0.153 rg
+/F1 7 Tf
+345 218 Td
+(stay unchanged.) Tj
+ET
+0.945 0.961 0.976 rg
+0 0 612 38 re f
+BT
+0.200 0.255 0.333 rg
+/F1 7 Tf
+42 16 Td
+(Implementation: Python CLI | Sources: recruiter CSV + recruiter notes | Output: default JSON + configurable projection) Tj
 ET
 endstream
 endobj
 xref
-0 6
+0 7
 0000000000 65535 f 
 0000000009 00000 n 
 0000000058 00000 n 
 0000000115 00000 n 
-0000000241 00000 n 
-0000000311 00000 n 
+0000000251 00000 n 
+0000000321 00000 n 
+0000000396 00000 n 
 trailer
-<< /Size 6 /Root 1 0 R >>
+<< /Size 7 /Root 1 0 R >>
 startxref
-2504
+7925
 %%EOF
