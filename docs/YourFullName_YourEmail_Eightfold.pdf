@@ -1,0 +1,108 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 2141 >>
+stream
+BT
+/F1 16 Tf
+72 755 Td
+(Eightfold Candidate Transformer - Technical Design) Tj
+/F1 11 Tf
+0 -24 Td
+(Pipeline) Tj
+/F1 9 Tf
+0 -13 Td
+(Detect source type, extract fields, normalize formats, merge candidate evidence, score) Tj
+/F1 9 Tf
+0 -13 Td
+(confidence, project to the requested customer schema, then validate before output.) Tj
+/F1 11 Tf
+0 -21 Td
+(Canonical schema) Tj
+/F1 9 Tf
+0 -13 Td
+(candidate_id, full_name, emails, phones, location, links, headline, years_experience, skills) Tj
+/F1 9 Tf
+0 -13 Td
+(with confidence/sources, experience, education, provenance, and overall_confidence.) Tj
+/F1 11 Tf
+0 -21 Td
+(Normalized formats) Tj
+/F1 9 Tf
+0 -13 Td
+(Emails are lowercased, phones are E.164, countries are ISO-3166 alpha-2, dates are YYYY-MM, and) Tj
+/F1 9 Tf
+0 -13 Td
+(skills are canonical lowercase names using an alias map such as JS -> javascript.) Tj
+/F1 11 Tf
+0 -21 Td
+(Merge policy) Tj
+/F1 9 Tf
+0 -13 Td
+(Records match by email first, phone second, normalized name last. Scalar conflicts are resolved) Tj
+/F1 9 Tf
+0 -13 Td
+(by repeated evidence, average source confidence, then individual confidence. Lists are deduped.) Tj
+/F1 11 Tf
+0 -21 Td
+(Runtime config) Tj
+/F1 9 Tf
+0 -13 Td
+(The transformer always builds a full canonical record first. A separate projection layer selects) Tj
+/F1 9 Tf
+0 -13 Td
+(fields, renames paths, maps from canonical paths like emails[0] or skills[].name, applies) Tj
+/F1 9 Tf
+0 -13 Td
+(optional normalizers, toggles confidence/provenance, and handles missing values as null, omit,) Tj
+/F1 9 Tf
+0 -13 Td
+(or error.) Tj
+/F1 11 Tf
+0 -21 Td
+(Handled edge cases) Tj
+/F1 9 Tf
+0 -13 Td
+(Missing or malformed source fields do not crash the run; bad phones are dropped instead of) Tj
+/F1 9 Tf
+0 -13 Td
+(guessed; CSV and notes for the same person merge into one profile; every chosen value keeps) Tj
+/F1 9 Tf
+0 -13 Td
+(provenance.) Tj
+/F1 11 Tf
+0 -21 Td
+(Scoped out) Tj
+/F1 9 Tf
+0 -13 Td
+(ATS JSON, live GitHub/LinkedIn calls, and PDF/DOCX resume parsing are left as future extractors.) Tj
+/F1 9 Tf
+0 -13 Td
+(They can emit the same intermediate evidence objects without changing merge or projection logic.) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2504
+%%EOF

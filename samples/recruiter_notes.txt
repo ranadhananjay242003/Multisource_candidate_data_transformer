@@ -1,0 +1,22 @@
+Candidate: Anaya Rao
+Email: anaya.rao@example.com
+Phone: +1-415-555-0198
+Location: San Francisco, California, USA
+Headline: Data platform engineer focused on reliable ETL and ML feature pipelines
+Skills: Python, SQL, Spark, Airflow, AWS Cloud, Machine Learning
+Experience: Northstar Labs, Senior Data Engineer, Mar 2022, Present
+Education: University of Texas, MS, Computer Science, 2018
+Profile links: https://linkedin.com/in/anayarao and https://github.com/anayarao
+Recruiter note: strongest evidence is email match; title is more specific than CSV title.
+
+---
+
+Candidate: Marcus Lee
+Email: marcus.lee@example.com
+Phone: 212.555.0134
+Location: New York, NY, United States
+Role: Product-minded full stack engineer
+Skills: JavaScript, React.js, Node, Postgres, Docker, GraphQL
+Experience: Orbit CRM, Full Stack Engineer, Jan 2021, Present
+Education: Rutgers University, BS, Information Systems, 2020
+Recruiter note: 4+ years experience. GitHub: https://github.com/marcuslee

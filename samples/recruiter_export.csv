@@ -1,0 +1,3 @@
+name,email,phone,current_company,title,city,region,country,skills,years_experience,linkedin,github
+Anaya Rao,anaya.rao@example.com,(415) 555-0198,Northstar Labs,Senior Data Engineer,San Francisco,CA,US,"Python; SQL; Airflow; Spark; AWS",6,https://linkedin.com/in/anayarao,https://github.com/anayarao
+Marcus Lee,marcus.lee@example.com,+1 212 555 0134,Orbit CRM,Full Stack Engineer,New York,NY,United States,"JS, React, Node.js, PostgreSQL, Docker",4,https://linkedin.com/in/marcuslee,https://github.com/marcuslee

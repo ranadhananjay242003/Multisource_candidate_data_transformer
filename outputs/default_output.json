@@ -1,0 +1,365 @@
+[
+  {
+    "candidate_id": "cand_a4086a623d",
+    "education": [
+      {
+        "degree": "MS",
+        "end_year": 2018,
+        "field": "Computer Science",
+        "institution": "University of Texas"
+      }
+    ],
+    "emails": [
+      "anaya.rao@example.com"
+    ],
+    "experience": [
+      {
+        "company": "Northstar Labs",
+        "end": null,
+        "start": "2022-03",
+        "summary": null,
+        "title": "Senior Data Engineer"
+      }
+    ],
+    "full_name": "Anaya Rao",
+    "headline": "Senior Data Engineer",
+    "links": {
+      "github": "https://github.com/anayarao",
+      "linkedin": "https://linkedin.com/in/anayarao",
+      "other": [],
+      "portfolio": null
+    },
+    "location": {
+      "city": "San Francisco",
+      "country": "US",
+      "region": "CA"
+    },
+    "overall_confidence": 0.9,
+    "phones": [
+      "+14155550198"
+    ],
+    "provenance": [
+      {
+        "field": "education",
+        "method": "regex-and-keyword-extract",
+        "source": "notes:recruiter_notes.txt#1"
+      },
+      {
+        "field": "emails",
+        "method": "csv-column-map",
+        "source": "csv:recruiter_export.csv"
+      },
+      {
+        "field": "experience",
+        "method": "regex-and-keyword-extract",
+        "source": "notes:recruiter_notes.txt#1"
+      },
+      {
+        "field": "full_name",
+        "method": "csv-column-map",
+        "source": "csv:recruiter_export.csv"
+      },
+      {
+        "field": "headline",
+        "method": "csv-column-map",
+        "source": "csv:recruiter_export.csv"
+      },
+      {
+        "field": "links.github",
+        "method": "csv-column-map",
+        "source": "csv:recruiter_export.csv"
+      },
+      {
+        "field": "links.linkedin",
+        "method": "csv-column-map",
+        "source": "csv:recruiter_export.csv"
+      },
+      {
+        "field": "location.city",
+        "method": "csv-column-map",
+        "source": "csv:recruiter_export.csv"
+      },
+      {
+        "field": "location.country",
+        "method": "csv-column-map",
+        "source": "csv:recruiter_export.csv"
+      },
+      {
+        "field": "location.region",
+        "method": "csv-column-map",
+        "source": "csv:recruiter_export.csv"
+      },
+      {
+        "field": "phones",
+        "method": "csv-column-map",
+        "source": "csv:recruiter_export.csv"
+      },
+      {
+        "field": "years_experience",
+        "method": "csv-column-map",
+        "source": "csv:recruiter_export.csv"
+      },
+      {
+        "field": "skills.airflow",
+        "method": "canonical-skill-map",
+        "source": "csv:recruiter_export.csv,notes:recruiter_notes.txt#1"
+      },
+      {
+        "field": "skills.aws",
+        "method": "canonical-skill-map",
+        "source": "csv:recruiter_export.csv,notes:recruiter_notes.txt#1"
+      },
+      {
+        "field": "skills.etl",
+        "method": "canonical-skill-map",
+        "source": "notes:recruiter_notes.txt#1"
+      },
+      {
+        "field": "skills.machine learning",
+        "method": "canonical-skill-map",
+        "source": "notes:recruiter_notes.txt#1"
+      },
+      {
+        "field": "skills.python",
+        "method": "canonical-skill-map",
+        "source": "csv:recruiter_export.csv,notes:recruiter_notes.txt#1"
+      },
+      {
+        "field": "skills.spark",
+        "method": "canonical-skill-map",
+        "source": "csv:recruiter_export.csv,notes:recruiter_notes.txt#1"
+      },
+      {
+        "field": "skills.sql",
+        "method": "canonical-skill-map",
+        "source": "csv:recruiter_export.csv,notes:recruiter_notes.txt#1"
+      }
+    ],
+    "skills": [
+      {
+        "confidence": 0.9199999999999999,
+        "name": "airflow",
+        "sources": [
+          "csv:recruiter_export.csv",
+          "notes:recruiter_notes.txt#1"
+        ]
+      },
+      {
+        "confidence": 0.9199999999999999,
+        "name": "aws",
+        "sources": [
+          "csv:recruiter_export.csv",
+          "notes:recruiter_notes.txt#1"
+        ]
+      },
+      {
+        "confidence": 0.77,
+        "name": "etl",
+        "sources": [
+          "notes:recruiter_notes.txt#1"
+        ]
+      },
+      {
+        "confidence": 0.77,
+        "name": "machine learning",
+        "sources": [
+          "notes:recruiter_notes.txt#1"
+        ]
+      },
+      {
+        "confidence": 0.9199999999999999,
+        "name": "python",
+        "sources": [
+          "csv:recruiter_export.csv",
+          "notes:recruiter_notes.txt#1"
+        ]
+      },
+      {
+        "confidence": 0.9199999999999999,
+        "name": "spark",
+        "sources": [
+          "csv:recruiter_export.csv",
+          "notes:recruiter_notes.txt#1"
+        ]
+      },
+      {
+        "confidence": 0.9199999999999999,
+        "name": "sql",
+        "sources": [
+          "csv:recruiter_export.csv",
+          "notes:recruiter_notes.txt#1"
+        ]
+      }
+    ],
+    "years_experience": 6.0
+  },
+  {
+    "candidate_id": "cand_c5315be934",
+    "education": [
+      {
+        "degree": "BS",
+        "end_year": 2020,
+        "field": "Information Systems",
+        "institution": "Rutgers University"
+      }
+    ],
+    "emails": [
+      "marcus.lee@example.com"
+    ],
+    "experience": [
+      {
+        "company": "Orbit CRM",
+        "end": null,
+        "start": "2021-01",
+        "summary": null,
+        "title": "Full Stack Engineer"
+      }
+    ],
+    "full_name": "Marcus Lee",
+    "headline": "Full Stack Engineer",
+    "links": {
+      "github": "https://github.com/marcuslee",
+      "linkedin": "https://linkedin.com/in/marcuslee",
+      "other": [],
+      "portfolio": null
+    },
+    "location": {
+      "city": "New York",
+      "country": "US",
+      "region": "NY"
+    },
+    "overall_confidence": 0.9,
+    "phones": [
+      "+12125550134"
+    ],
+    "provenance": [
+      {
+        "field": "education",
+        "method": "regex-and-keyword-extract",
+        "source": "notes:recruiter_notes.txt#2"
+      },
+      {
+        "field": "emails",
+        "method": "csv-column-map",
+        "source": "csv:recruiter_export.csv"
+      },
+      {
+        "field": "experience",
+        "method": "regex-and-keyword-extract",
+        "source": "notes:recruiter_notes.txt#2"
+      },
+      {
+        "field": "full_name",
+        "method": "csv-column-map",
+        "source": "csv:recruiter_export.csv"
+      },
+      {
+        "field": "headline",
+        "method": "csv-column-map",
+        "source": "csv:recruiter_export.csv"
+      },
+      {
+        "field": "links.github",
+        "method": "csv-column-map",
+        "source": "csv:recruiter_export.csv"
+      },
+      {
+        "field": "links.linkedin",
+        "method": "csv-column-map",
+        "source": "csv:recruiter_export.csv"
+      },
+      {
+        "field": "location.city",
+        "method": "csv-column-map",
+        "source": "csv:recruiter_export.csv"
+      },
+      {
+        "field": "location.country",
+        "method": "csv-column-map",
+        "source": "csv:recruiter_export.csv"
+      },
+      {
+        "field": "location.region",
+        "method": "csv-column-map",
+        "source": "csv:recruiter_export.csv"
+      },
+      {
+        "field": "phones",
+        "method": "csv-column-map",
+        "source": "csv:recruiter_export.csv"
+      },
+      {
+        "field": "years_experience",
+        "method": "csv-column-map",
+        "source": "csv:recruiter_export.csv"
+      },
+      {
+        "field": "skills.docker",
+        "method": "canonical-skill-map",
+        "source": "csv:recruiter_export.csv,notes:recruiter_notes.txt#2"
+      },
+      {
+        "field": "skills.graphql",
+        "method": "canonical-skill-map",
+        "source": "notes:recruiter_notes.txt#2"
+      },
+      {
+        "field": "skills.javascript",
+        "method": "canonical-skill-map",
+        "source": "csv:recruiter_export.csv,notes:recruiter_notes.txt#2"
+      },
+      {
+        "field": "skills.postgresql",
+        "method": "canonical-skill-map",
+        "source": "csv:recruiter_export.csv,notes:recruiter_notes.txt#2"
+      },
+      {
+        "field": "skills.react",
+        "method": "canonical-skill-map",
+        "source": "csv:recruiter_export.csv,notes:recruiter_notes.txt#2"
+      }
+    ],
+    "skills": [
+      {
+        "confidence": 0.9199999999999999,
+        "name": "docker",
+        "sources": [
+          "csv:recruiter_export.csv",
+          "notes:recruiter_notes.txt#2"
+        ]
+      },
+      {
+        "confidence": 0.77,
+        "name": "graphql",
+        "sources": [
+          "notes:recruiter_notes.txt#2"
+        ]
+      },
+      {
+        "confidence": 0.9199999999999999,
+        "name": "javascript",
+        "sources": [
+          "csv:recruiter_export.csv",
+          "notes:recruiter_notes.txt#2"
+        ]
+      },
+      {
+        "confidence": 0.9199999999999999,
+        "name": "postgresql",
+        "sources": [
+          "csv:recruiter_export.csv",
+          "notes:recruiter_notes.txt#2"
+        ]
+      },
+      {
+        "confidence": 0.9199999999999999,
+        "name": "react",
+        "sources": [
+          "csv:recruiter_export.csv",
+          "notes:recruiter_notes.txt#2"
+        ]
+      }
+    ],
+    "years_experience": 4.0
+  }
+]
