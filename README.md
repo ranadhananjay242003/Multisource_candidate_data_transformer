@@ -33,7 +33,7 @@ python -m unittest discover -s tests
 
 ## Design document
 
-The one-page design deliverable is in `docs/YourFullName_YourEmail_Eightfold.pdf`. Rename it with your actual full name and email before submission. I also included `docs/design_one_pager.md` so the reasoning is easy to review in text.
+The one-page design deliverable is in `docs/DhananjayRana_dhananjayrana24@gmail.com_Eightfold.pdf`. I also included `docs/design_one_pager.md` so the reasoning is easy to review in text.
 
 ## Assumptions and scope
 
